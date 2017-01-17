@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<input type="text" #data>
+<button (click)="add(data.value)"> add to story</button>
+<button (click)="get()">get story</button>
+
+<ul>
+  <li *ngFor="let item of items"> {{ item }}</li>
+</ul>
